@@ -47,6 +47,11 @@ and <filename>name.txt gives the object names in cluster-separated order.
 Also included is a Dockerfile, which can be used to install dependencies and run the
 tool in a Docker container.
 
+To build with docker: docker build -t tspk
+To run the container: docker run -it tspk 
+To copy images from docker container to host: docker cp <containerId>:/file/path/within/container /host/path/target
+ContainerId can be found using docker images command.
+
 
 ---------
 
